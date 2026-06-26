@@ -26,62 +26,62 @@ export default function App() {
 
   const heroPhotos = [
     {
-      src: '../public/1.jpg', 
+      src: '/1.jpg', 
       caption: 'Honored at Advocate Felicitation Ceremony 2026, Lucknow',
       badge: 'Felicitation'
     },
     {
-      src: '../public/2.jpg',
+      src: '/2.jpg',
       caption: 'Presented the Framed Constitution of India Preamble',
       badge: 'Civic Pride'
     },
     {
-      src: '../public/3.jpg',
+      src: '/3.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/4.jpg',
+      src: '/4.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/5.jpg',
+      src: '/5.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/6.jpg',
+      src: '/6.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/7.jpg',
+      src: '/7.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/8.jpg',
+      src: '/8.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/9.jpg',
+      src: '/9.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/10.jpg',
+      src: '/10.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/11.jpg',
+      src: '/11.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '../public/12.jpg',
+      src: '/12.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     }
@@ -147,8 +147,8 @@ export default function App() {
           {/* Logo & Branding */}
           <a href="#hero" className="flex items-center gap-3 group">
             <div className="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-slate-900 to-slate-950 border border-gold-500/30 rounded-xl overflow-hidden shadow-inner group-hover:border-gold-500 transition-colors p-1">
-              <img 
-                src="../public/vs_legal_logo_1781287211670.jpeg" 
+              <img
+                src="/vs_legal_logo_1781287211670.jpeg"
                 alt="V.S Legal Logo" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
@@ -391,7 +391,7 @@ export default function App() {
               <div className="absolute top-4 left-4 w-full h-full bg-slate-100 dark:bg-slate-850 rounded-2xl -z-10 border border-slate-200 dark:border-slate-800" />
               <div className="overflow-hidden bg-slate-950 rounded-2xl shadow-xl aspect-3/4 border border-slate-200 dark:border-slate-800">
                 <img
-                  src="../public/preamble_presentation_1781287182129.jpeg"
+                  src="/preamble_presentation_1781287182129.jpeg"
                   alt="Vallabh Shrivastava holding Constitution of India Preamble"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover hover:scale-103 transition-transform duration-500"
@@ -472,7 +472,7 @@ export default function App() {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-slate-900 border border-gold-500/30 rounded-xl overflow-hidden shadow-inner p-1">
-                <img src="../public/vs_legal_logo_1781287211670.jpeg" alt="V.S Legal Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover scale-110" />
+                <img src="/vs_legal_logo_1781287211670.jpeg" alt="V.S Legal Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover scale-110" />
               </div>
               <div>
                 <h4 className="font-serif font-bold text-sm tracking-widest text-gold-400 uppercase">

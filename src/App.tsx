@@ -5,7 +5,6 @@ import {
   ArrowRight, ShieldCheck, ChevronRight, GraduationCap, Briefcase
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-
 // Import modular components
 import PracticeAreas from './components/PracticeAreas';
 import GallerySection from './components/GallerySection';
@@ -27,62 +26,62 @@ export default function App() {
 
   const heroPhotos = [
     {
-      src: '/src/assets/images/1.jpg',
+      src: '../public/1.jpg', 
       caption: 'Honored at Advocate Felicitation Ceremony 2026, Lucknow',
       badge: 'Felicitation'
     },
     {
-      src: '/src/assets/images/2.jpg',
+      src: '../public/2.jpg',
       caption: 'Presented the Framed Constitution of India Preamble',
       badge: 'Civic Pride'
     },
     {
-      src: '/src/assets/images/3.jpg',
+      src: '../public/3.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/4.jpg',
+      src: '../public/4.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/5.jpg',
+      src: '../public/5.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/6.jpg',
+      src: '../public/6.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/7.jpg',
+      src: '../public/7.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/8.jpg',
+      src: '../public/8.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/9.jpg',
+      src: '../public/9.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/10.jpg',
+      src: '../public/10.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/11.jpg',
+      src: '../public/11.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     },
     {
-      src: '/src/assets/images/12.jpg',
+      src: '../public/12.jpg',
       caption: 'Receiving Court Honors at Faculty of Law, Dr. Shakuntala Misra NRU',
       badge: 'Academic Leadership'
     }
@@ -149,7 +148,7 @@ export default function App() {
           <a href="#hero" className="flex items-center gap-3 group">
             <div className="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-slate-900 to-slate-950 border border-gold-500/30 rounded-xl overflow-hidden shadow-inner group-hover:border-gold-500 transition-colors p-1">
               <img 
-                src="/src/assets/images/vs_legal_logo_1781287211670.jpeg" 
+                src="../public/vs_legal_logo_1781287211670.jpeg" 
                 alt="V.S Legal Logo" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
@@ -176,7 +175,6 @@ export default function App() {
             <a href="#bio" className="text-slate-755 dark:text-slate-250 hover:text-gold-500 dark:hover:text-gold-400 transition-colors nav-glow">Advocate Bio</a>
             <a href="#practice-areas" className="text-slate-755 dark:text-slate-250 hover:text-gold-500 dark:hover:text-gold-400 transition-colors nav-glow">Practice Areas</a>
             <a href="#gallery" className="text-slate-755 dark:text-slate-250 hover:text-gold-500 dark:hover:text-gold-400 transition-colors nav-glow">Action Gallery</a>
-            <a href="#contact" className="text-slate-755 dark:text-slate-250 hover:text-gold-500 dark:hover:text-gold-400 transition-colors nav-glow">Intake Dossier</a>
           </nav>
 
           {/* Action buttons (Theme + Quick Call) */}
@@ -195,11 +193,13 @@ export default function App() {
             {/* Direct Contact Button */}
             <a
               id="nav-direct-call"
-              href="tel:+917388163433"
-              className="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-gold-600 hover:bg-gold-700 active:scale-95 text-white rounded-xl shadow-md transition-all flex items-center gap-1.5"
+              href="https://wa.me/917388163433?text=Hello"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white rounded-xl shadow-md transition-all flex items-center gap-1.5"
             >
-              <Phone className="w-3.5 h-3.5 animate-bounce" />
-              +91 7388163433
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              Chat on WhatsApp
             </a>
           </div>
 
@@ -312,11 +312,13 @@ export default function App() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
               <a
                 id="hero-book-consult"
-                href="#contact"
-                className="flex items-center justify-center gap-2 py-3.5 px-7 bg-slate-950 dark:bg-gold-500 hover:bg-slate-850 dark:hover:bg-gold-600 text-white dark:text-slate-950 font-bold rounded-2xl tracking-wider text-xs uppercase shadow-xl transition-all"
+                href="https://wa.me/917388163433?text=Hello%20,%20I%20want%20to%20book%20a%20consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-3.5 px-7 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl tracking-wider text-xs uppercase shadow-xl transition-all"
               >
-                <Gavel className="w-4 h-4 text-gold-400 dark:text-slate-950" />
-                Book Consultation
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                Book Consultation on WhatsApp
               </a>
               <a
                 id="hero-view-practice"
@@ -354,17 +356,12 @@ export default function App() {
                 </AnimatePresence>
 
                 {/* Event Category Tag */}
-                <div className="absolute top-3 left-3 bg-slate-900/80 px-2.5 py-1 rounded-full text-[9px] uppercase tracking-widest font-mono font-bold text-gold-400 border border-slate-700">
-                  {heroPhotos[heroPhotoIndex].badge}
-                </div>
+                
               </div>
 
               {/* Description strip below photo */}
               <div className="pt-4 px-2">
-                <p className="text-xs text-gold-600 dark:text-gold-400 font-mono tracking-widest uppercase font-bold">LITIGATOR ATTESTATION</p>
-                <h3 className="font-serif text-slate-950 dark:text-slate-100 font-bold mt-1 text-sm md:text-base leading-snug min-h-[48px]">
-                  {heroPhotos[heroPhotoIndex].caption}
-                </h3>
+                
                 
                 {/* Dots indicator */}
                 <div className="flex items-center gap-1.5 mt-4">
@@ -394,7 +391,7 @@ export default function App() {
               <div className="absolute top-4 left-4 w-full h-full bg-slate-100 dark:bg-slate-850 rounded-2xl -z-10 border border-slate-200 dark:border-slate-800" />
               <div className="overflow-hidden bg-slate-950 rounded-2xl shadow-xl aspect-3/4 border border-slate-200 dark:border-slate-800">
                 <img
-                  src="/src/assets/images/preamble_presentation_1781287182129.jpeg"
+                  src="../public/preamble_presentation_1781287182129.jpeg"
                   alt="Vallabh Shrivastava holding Constitution of India Preamble"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover hover:scale-103 transition-transform duration-500"
@@ -475,7 +472,7 @@ export default function App() {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-slate-900 border border-gold-500/30 rounded-xl overflow-hidden shadow-inner p-1">
-                <img src="/src/assets/images/vs_legal_logo_1781287211670.jpeg" alt="V.S Legal Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover scale-110" />
+                <img src="../public/vs_legal_logo_1781287211670.jpeg" alt="V.S Legal Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover scale-110" />
               </div>
               <div>
                 <h4 className="font-serif font-bold text-sm tracking-widest text-gold-400 uppercase">
@@ -543,7 +540,7 @@ export default function App() {
       {/* Floating Left/Right WhatsApp Button */}
       <a
         id="floating-left-whatsapp"
-        href="https://wa.me/917388163433?text=Hello%20Advocate%20Vallabh,%2520I%2520would%2520like%2520to%2520consult%2520regarding%2520a%2520legal%2520matter."
+        href="https://wa.me/917388163433?text=Hello."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

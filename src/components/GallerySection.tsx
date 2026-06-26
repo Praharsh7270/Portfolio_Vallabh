@@ -7,7 +7,7 @@ import { GalleryItem } from '../types';
 const galleryItems: GalleryItem[] = [
   {
     id: 'moot-court-award-1',
-    imageUrl: '/src/assets/images/moot_court_award_1_1781287114796.jpeg',
+    imageUrl: '../public/moot_court_award_1_1781287114796.jpeg',
     title: 'Moot Court Convener Recognition',
     description: 'Awarded Certificate of honor at the Faculty of Law, Dr. Shakuntala Misra National Rehabilitation University, Lucknow during the Intra Moot Court Competition.',
     date: 'May 18-20, 2023',
@@ -15,7 +15,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 'moot-court-award-2',
-    imageUrl: '/src/assets/images/moot_court_award_2_1781287147836.jpeg',
+    imageUrl: '../public/moot_court_award_2_1781287147836.jpeg',
     title: 'Academic Legal Facilitation Honor',
     description: 'Receiving formal congratulations and academic appreciation certificates from senior university legal chancellors and administrators.',
     date: 'May 20, 2023',
@@ -23,7 +23,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 'association-celebration',
-    imageUrl: '/src/assets/images/vs_legal_celebration_1781287162297.jpeg',
+    imageUrl: '../public/vs_legal_celebration_1781287162297.jpeg',
     title: 'Lucrative Trial Success Celebration',
     description: 'Encouraging camaraderie beside fellow Advocates and legal professionals in Lucknow during an annual corporate/institutional cake-cutting gathering.',
     date: 'December 2024',
@@ -31,7 +31,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 'constitutional-preamble-honor',
-    imageUrl: '/src/assets/images/preamble_presentation_1781287182129.jpeg',
+    imageUrl: '../public/preamble_presentation_1781287182129.jpeg',
     title: 'Preamble presentation to Constitutional Scholars',
     description: 'Presented with a framed copy of the original Preamble to the Constitution of India in Lucknow, reiterating advocacy commitment.',
     date: 'Constitution Day',
@@ -39,7 +39,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 'advocate-felicitation-ceremony',
-    imageUrl: '/src/assets/images/felicitation_ceremony_2026_1781287197824.jpeg',
+    imageUrl: '../public/felicitation_ceremony_2026_1781287197824.jpeg',
     title: 'Babu Hargobind Dayal Srivastava Felicitation',
     description: 'Honored with prestigious awards at the Advocate Felicitation Ceremony ("अधिवक्ता सम्मान समारोह - 2026") alongside senior bar leaders.',
     date: 'April 2026',
